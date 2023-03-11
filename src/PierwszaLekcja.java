@@ -42,8 +42,8 @@ public class PierwszaLekcja {
         System.out.println("Podaj b: ");
         float y = input.nextFloat();
 
-        //obiekt (prawie jak funkcja)
-        Dzialania(3, 5);
+        //metoda (prawie jak funkcja obiektu)
+        Dzialania(x, y);
 
         float liczba1 = InputInt();
         float liczba2 = InputInt();
@@ -52,65 +52,102 @@ public class PierwszaLekcja {
         //Losowanie liczb
         Random losowanie = new Random(); // nowy obiekt
         //zakres 0 - 10                 \/ (ile liczb) + punkt startowy
-        int losuj = losowanie.nextInt(10)+0;
-        int losuj2 = losowanie.nextInt(10)-5; //od -5 przez 0 do 4 (bo w sumie 10 liczb)
+
+        int losuj = losowanie.nextInt(10) + 0;
+        int losuj2 = losowanie.nextInt(10) - 5; //od -5 przez 0 do 4 (bo w sumie 10 liczb)
         System.out.println(losuj);
+
+        double o = InputInt();
+        Pierwiastek(o);
+
+        int aa, bb;
+        aa = (int) InputInt();
+        bb = (int) InputInt();
+
+        int cc = losowanie.nextInt(aa)+bb;
+        Trojkat(aa, bb, cc);
     }
 
-        //Tutaj tworzymy obiekty (poza mainem)
+    //Tutaj tworzymy obiekty (poza mainem)
 
-        //Metoda do czytania liczb
-        public static float InputInt(){
-            Scanner input = new Scanner(System.in);
-            System.out.println("Podaj liczbę: ");
-            float z = input.nextFloat();
-            return z;
-        }
+    //Metoda do czytania liczb
+    public static float InputInt() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Podaj liczbę: ");
+        float z = input.nextFloat();
+        return z;
+    }
 
-        //Czy parzysta?
-        public static boolean CzyParzysta(float a){
-            if (a%2 == 0) return true;
-            else return false;
-        }
+    //Czy parzysta?
+    public static boolean CzyParzysta(float a) {
+        if (a % 2 == 0) return true;
+        else return false;
+    }
 
-        //Czy dziel sie przez 3 i 5?
-        public static boolean CzyP3i5(int a){
-            if (a%3 == 0 && a%5 == 0 ) return true;
-            else return false;
-        }
+    //Czy dziel sie przez 3 i 5?
+    public static boolean CzyP3i5(int a) {
+        if (a % 3 == 0 && a % 5 == 0) return true;
+        else return false;
+    }
 
-        //Funkcje matematyczne
-        public static float Matematyka(){
-            System.out.println(Math.abs(-2));
-            System.out.println(Math.round((2.20000034453F)));
-            System.out.println(Math.ceil(2.23344234466F)); //zaokrl w góre
-            System.out.println(Math.floor(2.234255266F)); //zaokrl w dół
+    //Funkcje matematyczne
+    public static float Matematyka() {
+        System.out.println(Math.abs(-2));
+        System.out.println(Math.round((2.20000034453F)));
+        System.out.println(Math.ceil(2.23344234466F)); //zaokrl w góre
+        System.out.println(Math.floor(2.234255266F)); //zaokrl w dół
 
-            Math.log(2);
-            Math.log10(2); // log naturalny
-            Math.log1p(23.10);//log z pi
-            Math.pow(2,3);// 2 do potęgi 3
-            Math.sqrt(34);
-            Math.min(2,3);
-            Math.max(2,3);
+        Math.log(2);
+        Math.log10(2); // log naturalny
+        Math.log1p(23.10);//log z pi
+        Math.pow(2, 3);// 2 do potęgi 3
+        Math.sqrt(34);
+        Math.min(2, 3);
+        Math.max(2, 3);
 
-            return 0;
-        }
+        return 0;
+    }
 
-        //zrób metodę zwracającą imie:
-        public static String Name(){
-            return "Mateusz";
-        }
-        public static int Age(){
-            return 21;
-        }
+    //zrób metodę zwracającą imie:
+    public static String Name() {
+        return "Mateusz";
+    }
 
-        //Metoda zwracająca sume itd
-        public static void Dzialania(float a, float b){
+    public static int Age() {
+        return 21;
+    }
+
+    //Metoda zwracająca sume itd
+    public static void Dzialania(float a, float b) {
 //                                                     \/ musi być nawias bo inaczej potraktuje to jako znaki nie działanie
-            System.out.println("Suma "+a+" + "+b+" = "+(a+b));// wypisywanie jak w pythonie
-            System.out.println("Różnica "+a+" - "+b+" = "+(a-b));
-            System.out.format("Iloczyn %f.3 + %f.5 = %f", a, b, (a*b)); //wypisywanie jak w C
+        System.out.println("Suma " + a + " + " + b + " = " + (a + b));// wypisywanie jak w pythonie
+        System.out.println("Różnica " + a + " - " + b + " = " + (a - b));
+        System.out.format("Iloczyn %f.3 + %f.5 = %f", a, b, (a * b)); //wypisywanie jak w C
         //%c znak, %d liczba, %f float (%f.3 to 3 miejsca po przecinku), %s string, %t czas (kalendarz),
+    }
+
+    public static double Pierwiastek(double o) {
+        double b = o;
+        o = Math.sqrt(o);
+        b = o;
+        System.out.println("Pierwiastek liczby " + o + " wynosi: " + b);
+        return 0;
+    }
+
+    public static boolean Trojkat(int aa, int bb, int cc){
+        if (aa+bb > cc){
+            return true;
+        } else if (aa+cc > bb) {
+            System.out.println("Można");
+            return true;
+        } else if (bb+cc > aa) {
+            System.out.println("Można");
+            return true;
+        } else {
+            boolean b = false;
+            System.out.println("NIE");
+            return b;
         }
+    }
+
 }
