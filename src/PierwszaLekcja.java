@@ -136,6 +136,7 @@ public class PierwszaLekcja {
 
     public static boolean Trojkat(int aa, int bb, int cc){
         if (aa+bb > cc){
+            System.out.println("Można");
             return true;
         } else if (aa+cc > bb) {
             System.out.println("Można");
