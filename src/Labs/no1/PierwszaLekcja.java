@@ -57,9 +57,13 @@ public class PierwszaLekcja {
         int losuj2 = losowanie.nextInt(10) - 5; //od -5 przez 0 do 4 (bo w sumie 10 liczb)
         System.out.println(losuj);
 
+
+        System.out.println("Pierwiastek liczby podanej: \n");
         double o = InputInt();
         Pierwiastek(o);
 
+
+        //Zadanie 7
         int aa, bb;
         aa = (int) InputInt();
         bb = (int) InputInt();
@@ -122,7 +126,7 @@ public class PierwszaLekcja {
 //                                                     \/ musi być nawias bo inaczej potraktuje to jako znaki nie działanie
         System.out.println("Suma " + a + " + " + b + " = " + (a + b));// wypisywanie jak w pythonie
         System.out.println("Różnica " + a + " - " + b + " = " + (a - b));
-        System.out.format("Iloczyn %f.3 + %f.5 = %f", a, b, (a * b)); //wypisywanie jak w C
+        System.out.format("Iloczyn %f.3 + %f.5 = %f\n", a, b, (a * b)); //wypisywanie jak w C
         //%c znak, %d liczba, %f float (%f.3 to 3 miejsca po przecinku), %s string, %t czas (kalendarz),
     }
 
@@ -130,18 +134,11 @@ public class PierwszaLekcja {
         double b = o;
         o = Math.sqrt(o);
         b = o;
-        System.out.println("Pierwiastek liczby " + o + " wynosi: " + b);
+        System.out.println("Pierwiastek liczby " + o + " wynosi: \n" + b);
         return 0;
     }
-
     public static boolean Trojkat(int aa, int bb, int cc){
-        if (aa+bb > cc){
-            System.out.println("Można");
-            return true;
-        } else if (aa+cc > bb) {
-            System.out.println("Można");
-            return true;
-        } else if (bb+cc > aa) {
+        if (aa+bb > cc && aa+cc > bb && bb+cc > aa){
             System.out.println("Można");
             return true;
         } else {
