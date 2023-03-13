@@ -1,4 +1,4 @@
-// Samo się dodaje (dodanie bibliotek)
+package Labs.no1;// Samo się dodaje (dodanie bibliotek)
 import java.util.*;
 
 public class PierwszaLekcja {
