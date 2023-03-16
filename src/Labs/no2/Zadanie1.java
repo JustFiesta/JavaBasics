@@ -39,9 +39,4 @@ public class Zadanie1 {
 
         }else System.out.println("To nie jest równanie kwadratowe");
     }
-
-
-
-
-
 }

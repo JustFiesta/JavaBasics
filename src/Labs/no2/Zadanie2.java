@@ -1,5 +1,7 @@
 package Labs.no2;
 
+import java.util.Scanner;
+
 import static Labs.no1.PierwszaLekcja.InputInt;
 
 public class Zadanie2 {
@@ -21,6 +23,12 @@ public class Zadanie2 {
         System.out.println("1 - Suma; 2 - Różnica, 3 - Iloczyn; 4 - Iloraz; 5 - Potęga liczby nr 1 do liczby nr 2; 6 - Pierwiastki obu liczb; 7 - Funkcje trygonometryczne obu liczb");
         int liczMenu = (int) InputInt();
         Menu(liczMenu, a, b);
+    }
+    public static String ReadString(){
+        Scanner inputStr = new Scanner(System.in);
+        String confirm;
+        confirm = inputStr.next();
+        return confirm;
     }
     public static float Suma(float a, float b){
         System.out.println("Suma liczb "+a+" i "+b+" to: "+(a+b));
@@ -61,7 +69,8 @@ public class Zadanie2 {
     }
     public static void Menu(int liczMenu, float a, float b){
         int i = 1;
-        while (i == 1) {
+        String conf;
+        while (true) {
             switch (liczMenu) {
                 case 1:
                     Suma(a, b);
@@ -85,9 +94,14 @@ public class Zadanie2 {
                     Tryg(a);
                     Tryg(b);
                     break;
-                case 8: i = 0;
-                    System.out.println("Adios");
-                    break;
+                case 8:
+                    System.out.println("Czy napewno chcesz wyjść? T/N");
+                    conf = ReadString();
+                    if(conf.equals("T") || conf.equals("t")){
+                        System.out.println("Adios");
+                        System.exit(1);
+                        break;
+                    }
             }
         }
     }
