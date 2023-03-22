@@ -10,9 +10,6 @@ public class Tablice {
         int[] array1;
         array1 = new int[4];
 
-        //Drugi sposób z wpisaniem danych
-        int[] array2 = new int[]{1,2,3,4,5,3};
-
         //Ręczne wpisanie danych
         int[] array = new int[4];
 
@@ -20,6 +17,9 @@ public class Tablice {
         array[1] = 3;
         array[2] = 5;
         array[3] = array[1]*array[2];
+
+        //Drugi sposób z wpisaniem danych
+        int[] array2 = new int[]{1,2,3,4,5,3};
 
         //Skrócone bez new int[]{...}
         int[] data = {1,2,3,4};
@@ -40,6 +40,7 @@ public class Tablice {
             System.out.println(i);
         }
 
+
         //Tablica znaków
         char[] arrayChar = new char[]{'j','a','v','a'};
         
@@ -47,11 +48,29 @@ public class Tablice {
             System.out.println(i); //dlaczego wypisuje ascii?
         }
 
+
         //Zmiana tablicy znaków na słowo
         String StringTab = new String(arrayChar);
         System.out.println(StringTab);
 
         String[] arrayString2 = new String[]{"jeden", "dwa plus jeden", "trzy"};
+
+
+        //String na tablice charów
+        String text = "To jest tekst do podziału na tablice";
+        String[] textArray = text.split(" "); //Dzieli na kolejny pojemnik (indeks tablicy), po spacji
+
+        //Sposób 2
+        char[] charArray = text.toCharArray();
+        System.out.println(charArray);
+
+
+        //Kopiowanie tablicy;
+        String[] copyArray = new String[7];
+        System.arraycopy(textArray, 0, copyArray, 0, textArray.length);
+
+        String[] tab = Arrays.copyOf(textArray, textArray.length);
+
 
         //Długość tablicy
         System.out.println("Długość tablicy: "+arrayString.length);
@@ -106,18 +125,11 @@ public class Tablice {
         System.out.println("Wynik equals: "+ Arrays.equals(dataY, dataX)); //zwraca    T/F
         System.out.println("Wynik compare: "+ Arrays.compare(dataY, dataX)); //zwraca 0/-1
 
-        String text = "To jest tekst do podziału na tablice";
-        String[] textArray = text.split(" "); //Dzieli na kolejny pojemnik (indeks tablicy), po spacji
 
-        char[] charArray = text.toCharArray();
-        System.out.println(charArray);
-
-        //Kopiowanie tablicy;
-        String[] copyArray = new String[7];
-        System.arraycopy(textArray, 0, copyArray, 0, textArray.length);
-
-
-        String[] tab = Arrays.copyOf(textArray, textArray.length);
-
+        //Odwrócenie tablicy - reverse
+        System.out.println("Tablica od tyłu:");
+        for (int i = array.length - 1; i >= 0; i--){
+            System.out.println(array[i]+" ");
+        }
     }
 }

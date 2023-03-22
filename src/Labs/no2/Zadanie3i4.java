@@ -4,8 +4,12 @@ import java.util.Scanner;
 //Użycie tablic
 public class Zadanie3i4 {
     public static void main(String[] args) {
-
-
+        int[] array = returnArray();
+        viewArray(array);
+        viewReverse(array);
+        viewEven(array);
+        viewOdd(array);
+        arraySum(array);
     }
 
     public static float InputInt() {
@@ -44,7 +48,6 @@ public class Zadanie3i4 {
         for (int i = array.length - 1; i >= 0; i--) {
             if (i % 2 == 0)
                 System.out.print(array[i] + " ");
-            continue;
         }
     }
 
@@ -53,7 +56,6 @@ public class Zadanie3i4 {
         for (int i = array.length - 1; i >= 0; i--) {
             if (i % 2 == 1)
                 System.out.print(array[i] + " ");
-            continue;
         }
     }
     public static void arraySum(int[] array){
