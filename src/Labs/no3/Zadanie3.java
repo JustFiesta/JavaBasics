@@ -1,6 +1,6 @@
-package no3;
+package Labs.no3;
 
-import static no3.Zadanie1.InputInt;
+import static Labs.no3.Zadanie1.InputInt;
 
 public class Zadanie3 {
     public static void main(String[] args) {

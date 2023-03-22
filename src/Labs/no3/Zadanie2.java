@@ -1,5 +1,5 @@
-package no3;
-import static no3.Zadanie1.InputInt;
+package Labs.no3;
+import static Labs.no3.Zadanie1.InputInt;
 
 public class Zadanie2 {
 

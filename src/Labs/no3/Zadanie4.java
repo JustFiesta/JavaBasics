@@ -1,8 +1,8 @@
-package no3;
+package Labs.no3;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-import static no3.Zadanie1.InputInt;
+import static Labs.no3.Zadanie1.InputInt;
 
 public class Zadanie4 {
     public static void main(String[] args) {

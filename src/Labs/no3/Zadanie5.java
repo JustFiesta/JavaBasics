@@ -1,4 +1,4 @@
-package no3;
+package Labs.no3;
 
 import java.util.Arrays;
 import java.util.Scanner;
