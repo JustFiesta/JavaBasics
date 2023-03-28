@@ -1,21 +1,33 @@
 package Labs.no4.Zadanie1;
 
 public class Circle {
+    String name;
+    double radius;
     static final double pi = Math.PI;
-    int radius;
+    public double Field(double radius){
+        return pi * (Math.pow(radius, 2));
+    }
+    public double Circut(double radius){
+        return 2 * pi * radius;
+    }
+    public void Params(){
+        System.out.println("Wybrana figura: "+this.getName());
+        System.out.println("Promień koła wynosi: "+this.getRadius());
+        System.out.println("Pole wynosi: "+this.Field(radius));
+        System.out.println("Obwód wynosi: "+this.Circut(radius));
+    }
 
-    public static double Field(double radius){
-        double field = pi * (Math.pow(radius, 2));
-        return field;
+    public String getName() {
+        return name;
     }
-    public static double Circut(double radius){
-        double circut = 2 * pi * radius;
-        return circut;
+    public double getRadius() {
+        return radius;
     }
-    public static void Params(double radius){
-        System.out.println("Wybrana figura: Koło");
-        System.out.println("Promień koła wynosi: "+radius);
-        System.out.println("Pole wynosi: "+Field(radius));
-        System.out.println("Obwód wynosi: "+Circut(radius));
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 }
