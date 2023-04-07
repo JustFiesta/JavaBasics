@@ -1,9 +1,6 @@
 package Labs.no5;
 
-import Labs.no5.Zadanie1.Figure;
-import Labs.no5.Zadanie1.Point;
-import Labs.no5.Zadanie1.Rectangle;
-import Labs.no5.Zadanie1.Triagnle;
+import Labs.no5.Zadanie1.*;
 
 import java.util.Scanner;
 
@@ -21,18 +18,34 @@ public class Main {
         point3.description("point3");
 
         Figure figure1 = new Figure();
-        figure1.description();
-        figure1.getKolor();
+        System.out.println(figure1.description());
+        System.out.println(figure1.getColor());
 
         Rectangle rectangle1 = new Rectangle(5,12);
-        rectangle1.getPowierzchnia();
+        System.out.println(rectangle1.getField());
+        rectangle1.move(3,5);
 
         Triagnle triagnle1 = new Triagnle(5,5);
+
+        Circle circle0 = new Circle(25);
+        System.out.println(circle0.getField());
+        System.out.println(circle0.inCircle(point3));
+
+        Square square0 = new Square(5, "Pomarańczowy");
+        System.out.println(square0.description());
+        System.out.println(square0.getField());
+
+        System.out.println(point1.description());
+        System.out.println(figure1.description());
+        System.out.println(rectangle1.description());
+        System.out.println(triagnle1.description());
+        System.out.println(circle0.description());
+        System.out.println(square0.description());
 
 
     }
     public static int InputInt(){
-        System.out.println("Podaj liczbę: ");
+        System.out.println("Wpisz liczbę: ");
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
         return number;

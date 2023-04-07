@@ -13,28 +13,21 @@ public class Point {
         this.y = y;
     }
 
-
     public void tare(){
         this.x = 0;
         this.y = 0;
     }
-    public String description(String PointName) {
-        return "Dane twojego punktu: " +
-                "x=" + x +
-                ", y=" + y;
+    public void description(String PointName) {
+        System.out.println("Dane twojego punktu: " + "x=" + x + ", y=" + y);
     }
     public void move(int moveX, int moveY) {
-        System.out.println("O ile chcesz przesunąć x?");
-        moveX = InputInt();
-
-        System.out.println("O ile chcesz przesunąć y?");
-        moveY = InputInt();
-
         this.x += moveX;
         this.y += moveY;
     }
 
-
+    public String description(){
+        return "Klasa Punkt.";
+    }
     public void setX(int x) {
         this.x = x;
     }
