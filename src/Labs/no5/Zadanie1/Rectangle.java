@@ -1,7 +1,5 @@
 package Labs.no5.Zadanie1;
 
-import static Labs.no5.Main.InputInt;
-
 public class Rectangle extends Figure{
     double hight=0, width=0;
 

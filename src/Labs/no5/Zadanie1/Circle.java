@@ -1,6 +1,6 @@
 package Labs.no5.Zadanie1;
 
-import static Labs.no5.Main.InputInt;
+import static Labs.no5.Zadanie1.Main.InputInt;
 
 public class Circle extends Figure{
     double radius;

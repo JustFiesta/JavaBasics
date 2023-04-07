@@ -1,4 +1,4 @@
-package Labs.no5;
+package Labs.no5.Zadanie1;
 
 import Labs.no5.Zadanie1.*;
 
