@@ -1,4 +1,4 @@
-package Labs.no6;
+package Labs.no6.AbstrakcjeInterfejsy;
 
 public abstract class KlasyAbstrakcyjne {
     public static final int i = 10;
