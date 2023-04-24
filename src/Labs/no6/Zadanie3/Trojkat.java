@@ -1,4 +1,4 @@
-
+package Labs.no6.Zadanie3;
 
 class Trojkat extends Figura{
 	int wys=0;
@@ -13,4 +13,8 @@ class Trojkat extends Figura{
 		return "Trojkat o wymairach: "+wys+"  "+podst;
 	}
 
+	@Override
+	public String Opis() {
+		return "To jest " +getClass().getSimpleName()+ " o wys: " + wys + " i podst: "+podst;
+	}
 }

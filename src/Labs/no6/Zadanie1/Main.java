@@ -1,4 +1,5 @@
 package Labs.no6.Zadanie1;
+//klasy abstrakcji
 
 public class Main {
     public static void main(String[] args) {

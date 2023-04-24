@@ -1,3 +1,4 @@
+package Labs.no6.Zadanie3;
 
 class Prostokat extends Figura {
 	int wys=0;
@@ -10,5 +11,10 @@ class Prostokat extends Figura {
 	}
 	public String opis(){
 		return "Prostokat o wymairach: "+szer+" x "+wys;
+	}
+
+	@Override
+	public String Opis() {
+		return "To jest " +getClass().getSimpleName()+ " o wys: " + wys + " i szer: "+szer;
 	}
 }
