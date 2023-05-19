@@ -1,4 +1,4 @@
-package Labs.no4.Zadanie4;
+package Labs.no6.Zadanie4;
 
 abstract public class Animal {
     private String name = "brak imienia";

@@ -1,4 +1,4 @@
-package Labs.no4.Zadanie4;
+package Labs.no6.Zadanie4;
 
 public class Main {
     public static void main(String[] args) {
