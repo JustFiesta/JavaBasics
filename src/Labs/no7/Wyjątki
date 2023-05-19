@@ -1,0 +1,9 @@
+//Co to?
+ - klasa w każdym języku programowania
+ - try - kod sprawdzany, catch - kod wyłapujący błąd
+ - klasa error - reprezentuje  nieodwracalne  warunki, stack overflow, wycieki pamięci, za mało pamięci itd
+ - klasa exception: (Gdy  w metodzie  występuje wyjątek, tworzymy obiekt i jest on nazywany obiektem wyjątku. Zawiera informacje o wyjątku, takie jak nazwa i opis wyjątku oraz stan programu, w którym wystąpił wyjątek. )
+    - IOException - błędy in out
+    - RutimeException - błędy działania
+
+Czytanie wyjątków w konsoli zaczynamy od dołu
