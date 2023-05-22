@@ -15,7 +15,7 @@ public class Main {
             System.out.println("Błąd wpisanego adresu. "+e.getMessage());
         }
         try{
-            Adres lisaKuli = new Adres("Lisa-Kuli", "35-002", "Rzeszów", 124);
+            Adres lisaKuli = new Adres(null, "35-002", "Rzeszów", 124);
         }
         catch (adresException e){
             System.out.println("Błąd wpisanego adresu. "+e.getMessage());
