@@ -2,7 +2,10 @@
 Interfejs Collection, oprócz tego że stoi na szczycie hierarchii jest przy okazji dostawcą większości metod,  z  których  korzystają  dziedziczące  interfejsy.  Do  metod  tych  należą  między  innymi:  add (dodawanie  do kolekcji), remove  (usuwanie  z  kolekcji), clear (czyszczenie  kolekcji), size (zwracanie rozmiaru kolekcji).
 
 ### List 
-Najczęściej używany rodzaj kolekcji. Charakteryzuje się tym, że jej elementy posiadają określoną kolejność. Dodatkowo są one indeksowane, dzięki czemu można pobrać obiekt znajdujący się na konkretnej pozycji (indeksie) w liście. Na przykład możemy użyć metody get(2), gdzie 2 to numer pozycji, którą chcemy pobrać. Dostaniemy wtedy trzeci element listy (pozycje są numerowane od 0). Interfejs jest implementowany przez następujące klasy:ArrayList, LinkedList, Vector  (ta  klasa  jest jeszcze rozszerzana przez Stack, który nie implementuje bezpośrednio interfejsu List)
+Najczęściej używany rodzaj kolekcji. Charakteryzuje się tym, że jej elementy posiadają określoną kolejność. Dodatkowo są one indeksowane, dzięki czemu można pobrać obiekt znajdujący się na konkretnej pozycji (indeksie) w liście. Na przykład możemy użyć metody get(2), gdzie 2 to numer pozycji, którą chcemy pobrać. Dostaniemy wtedy trzeci element listy (pozycje są numerowane od 0). Interfejs jest implementowany przez następujące klasy:
+* ArrayList, 
+* LinkedList, 
+* Vector  (ta  klasa  jest jeszcze rozszerzana przez Stack, który nie implementuje bezpośrednio interfejsu List)
 ### Queue (kolejki)
 Najważniejszą cechą tej kolejki jest zachowanie kolejności według zasady FIFO (First In -First Out). Oznacza to, że pierwszy element wprowadzony do kolejki będzie z niej również pobierany jako pierwszy. Interfejs jest implementowany przez: PriorityQueue
 ### Deque (Double ended queue)
