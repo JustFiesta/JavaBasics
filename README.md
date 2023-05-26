@@ -34,44 +34,45 @@ My excercises from studies
 3. Stwórz program w którym będzie utworzonych kilka obiektów typu Gatunek. Klasa Gatunek powinna zawierać następujące pola: nazwę rodzaju, nazwę gatunkową, liczbę chromosomów 2n, podstawową liczbę chromosomów x, opis oraz metody: podającą pełną nazwę (Rodzaj + gatunek), podającą haploidalną liczbę chromosomów n, wypisującą wszystkie dane, klonującą obiekt – metoda powinna zwracać odnośnik do nowego obiektu typu Gatunek o wartościach pól takich samych jak w obiekcie, w którym została wywołana. W programie powinny być użyte wszystkie metody.
 
 # Lab6 (Abstrakcje, interfejsy, typ wyliczeniowy ENUM)
-1. Transport
+1. Transport 
+
 Proszę zaimplementować aplikację modelu istniejących środków transportu używanych do
 przemieszczania się zarówno na lądzie, wodzie jak i w powietrzu. Wskazówka: Należy utworzyć
 interfejs Plywa oraz Lata (metody odpowiednio plyn() i lec()). Powinno się również zdefiniować klasy
 implementujące każdy z interfejsów (np. Statek, Samolot) jak również klasę tworzącą przykładowe
 obiekty wraz z wywołaniem zaimplementowanych metod.
-3.1.Uruchomić i zapoznać się z kodem plików znajdujących się w rozpakowanym pliku. Dołącz
+* Uruchomić i zapoznać się z kodem plików znajdujących się w rozpakowanym pliku. Dołącz
   wszytki do nowego projektu.
-  2. W programie głównym utworzyć reprezentację każdej klasy, która jest w projekcie i zaproponuj
+*  W programie głównym utworzyć reprezentację każdej klasy, która jest w projekcie i zaproponuj
   uruchomienie przykładowych trzech funkcji.
-  3. Zamienić klasę Figura na klasę abstrakcyjną
-  4. Dodaj do klasy Figura metodę abstrakcyjną String opis(), zwracającą informację o obiekcie, np.
+* Zamienić klasę Figura na klasę abstrakcyjną
+*  Dodaj do klasy Figura metodę abstrakcyjną String opis(), zwracającą informację o obiekcie, np.
   „Obiekt klasy Prostokat”.
-  5. Zmodyfikować pozostałe klasy, tak, aby program kompilował się poprawnie.
-  6. W programie głównym utworzyć tablicę o nazwie tablicaFigur o rozmiarze 10 typu Figura. Do
+*  Zmodyfikować pozostałe klasy, tak, aby program kompilował się poprawnie.
+*  W programie głównym utworzyć tablicę o nazwie tablicaFigur o rozmiarze 10 typu Figura. Do
   każdego elementu tablicy utworzyć nowy obiekt, lub przypisać istniejący.
-  7. Dla każdego obiektu tablicy wywołać metodę opis(). Z której klasy została wywołana metoda opis()
+*  Dla każdego obiektu tablicy wywołać metodę opis(). Z której klasy została wywołana metoda opis()
   i dlaczego?
-  8. W klasie Figura zdefiniować dodatkowe metody abstrakcyjne i zaimplementuj je w klasach
+*  W klasie Figura zdefiniować dodatkowe metody abstrakcyjne i zaimplementuj je w klasach
   potomnych:
-      a) void skaluj(float skala) //skaluje wielkość figury
-  9. Zdefiniuj interfejs o nazwie IFigury, zawierający następujące metody:
-      b) float getPowierzchnia();
-      c) boolean wPolu(Punkt p);
-  10. Zaimplementuj interfejs IFigury we wszystkich klasach Prostokat, Trojkat, Kwadrat.
-  11. W programie głównym zadeklaruj listę obiektów typu IFigury, następnie przypisz do niej różne
+    a) void skaluj(float skala) //skaluje wielkość figury
+*  Zdefiniuj interfejs o nazwie IFigury, zawierający następujące metody:
+    b) float getPowierzchnia();
+    c) boolean wPolu(Punkt p);
+*  Zaimplementuj interfejs IFigury we wszystkich klasach Prostokat, Trojkat, Kwadrat.
+* W programie głównym zadeklaruj listę obiektów typu IFigury, następnie przypisz do niej różne
   figury: Prostokat, Kwadrat, Trojkat.
-  12. Dla każdego obiektu tablicy IFigur wywołaj metodę getPowierzchnia() i w_polu().
+*  Dla każdego obiektu tablicy IFigur wywołaj metodę getPowierzchnia() i w_polu().
   Kolejno:
   1. Utwórz klasę Okrag dziedziczącą po klasie Figura
   2. Zdefiniuj interfejs o nazwie RuchFigury, zawierający następującą metodę:
   3. void przesun(int x, int y);
   4. Zaimplementuj interfejs RuchFigury w klasie Okrąg.
   5. Sprawdź działanie interfejsu.
-4. Utwórz:
+* Utwórz:
    1. Interfejs Moveable zawierający tylko dwie metody abstrakcyjne:
-    •void start()
-    •void stop();
+      * void start()
+      * void stop();
    2. Klasę Rower implementującą interfejs Moveable
    3. Klasę Samochod z polem marka implementującą interfejs Moveable
    4. Interfejs Speakable z dwoma stałymi statycznymi: int QUIET = 0 <-publiczne stałe statyczne, int LOUD = 1 <- domyślnie public static finali metodą abstrakcyjną
@@ -89,3 +90,40 @@ obiekty wraz z wywołaniem zaimplementowanych metod.
 7. Utwórz klasę rzucającą wyjątek przy próbie wykonania dzielenia przez 0. Klasa ma dziedziczyć po java.lang.Exception. Następnie utwórz klasę, która testuje czy wyjątki dzielenia przez zero są rzucane przy pomocy utworzonej wcześniejszej klasy i wyłapywane.
 8. Wykonaj program, który losuje dwie liczby całkowite z przedziału (-10 do 10). Następnie podziel pierwszą liczbę przez drugą i wypisz wynik. Uwzględnij i zaprogramuj wyjątek dzielenia przez zero. Wypisz informację o wystąpieniu tego wyjątku. Po trzecim wystąpieniu wyjątku zakończ wykonywanie programu.
 9. Wykorzystując zadanie z poprzednich zajęć dotyczące Kalkulatora podstawowych obliczeń oraz Kalkulatora działań na tablicach, zmodyfikuj kody tak aby obsłużyć niezbędne wyjątki.
+
+# Lab8 (Kolekcje - Listy, kolejki, zbiory, hashMapy)
+1. Napisz program, który będzie pobierał od użytkownika imiona. Program powinien pozwolić użytkownikowi na wprowadzenie dowolnej liczby imion (wprowadzenie „-” jako imienia przerwie wprowadzanie). Na zakończenie wypisz liczbę unikalnych imion.
+2. Napisz program, który będzie pobierał od użytkownika imiona par dopóki nie wprowadzi imienia „-”, następnie poproś użytkownika o podanie jednego z wcześniej wprowadzonych imion i wyświetl imię odpowiadającego mu partnera.
+3. Napisz klasę przechowującą informacje o uczestnikach wydarzenia (ID, imię oraz jego wiek). Zaimplementować metodę toString(), aby wyświetlać informację o uczestniku oraz metody equals() oraz hashCode() (metody do porównywania obiektów). Do przechowywania uczestników należy użyć listy. Ponadto zaproponować metodę pozwalającą na filtrowanie osób niepełnoletnich. Zaproponować rozwiązanie z użyciem LinkedList oraz ArrayList.
+4. Utwórz dowolną klasę, a potem zainicjalizowaną tablicę obiektów tej klasy. Zawartością tablicy wypełnij listę List. Wyłuskaj z niej fragment listy metodą subList(), a następnie usuń tę podlistę z oryginalnej listy.
+5. Utwórz i zapełnij listę List<Integer>. Utwórz drugą listę List<Integer>. Użyj ListIterator do przejrzenia elementów pierwszej listy i wstawienia ich do listy drugiej, ale w odwrotnej kolejności.
+6. 1. Utwórz nową klasę Kangur ze składową int nrKangura, inicjalizowaną z poziomu konstruktora. Wyposaż klasę w metodę skok(), wypisującą wartość tej składowej i sygnalizującej wykonywanie podskoków. Utwórz kontener ArrayList i wstaw do niego obiekty Kangur (minimum 10). Teraz skorzystaj z metody get() kontenera w celu przejrzenia jego zawartości i wywołania metody skok() dla każdego umieszczonego w nim kangura.
+   2. Zmodyfikuj uzyskany kod tak, aby przeglądało listę (i wywoływało metodę skok()) za pomocą iteratora.
+   3. Weź klasę Kangur z podpunktu 1 i umieść jej elementy w kontenerze HashMap, kojarząc każdy egzemplarz Kangur (wartość) z nazwą ("Jacek", "Marta" itd.) w postaci obiektu String (klucz). Pozyskaj iterator zbioru zwracanego przez keySet() i wykorzystaj go do przejrzenia kontenera HashMap. Wypisz w konsoli imiona kangurów oraz odpowiadające im numery, zwracane poprzez metodę skok().
+   4. Wyodrębnij z kontenera HashMap (utworzonego w poprzednim podpunkcie) pary, posortuj je według kluczy i umieść całość w kontenerze LinkedHashMap.
+7. Napisz klasę o nazwie Command, która zawiera ciąg znaków String i metodę operation(), która go wypisuje. Napisz drugą klasę, z metodą wypełniającą kolejkę Queue obiektami klasy Command i zwracającą wypełniony kontener. Przekaż kontener do metody z trzeciej klasy: metoda ma konsumować obiekty z kolejki Queue, wywołując dla każdego z nich metodę operation().
+8. W poniższym zadaniu napiszemy własną klasę odnośnie stosu, czyli co zostanie włożone na stos jako ostatnie jest pierwszym elementem, który można z niego zdjąć (LIFO).
+   1. Utwórz klasę Stos<T> zawierającą:
+      * zainicjowane prywatne pole LinkedList<T> stos,
+      * publiczne metody:
+      * void push(T v) - wkłada element na stos,
+      * T peek() - zwraca pierwszy element stosu, ale go nie usuwa,
+      * T pop() - zwraca pierwszy element stosu i usuwa go,
+      * boolean empty() - sprawdza, czy stos jest pusty,
+      * String toString() - wypisuje elementy naszego stosu.
+   2. Stosy są często używane do obliczania wyrażeń w językach programowania. Za pomocą utworzonej klasy Stos oblicz poniższe wyrażenie, w którym '+' oznacza "umieszczenie następnej litery na stosie", a '-' "zdjęcie szczytowego elementu stosu i wypisanie go na wyjściu".
+      Wyrażenie do wyliczenia: " +B+a+ł---+a+g+a---+n-+w-+l+i+t---+e-+r+k--+a+c+h---"
+      4
+9. Napisz prostą symulację pójścia na zakupy:
+    * utwórz tablicę String zawierającą 10 nazw produktów dostępnych w sklepie,
+    * po wejściu do sklepu zapełnij kosz (będący stosem - użyj klasy z poprzedniego zadania) losową ilością losowych towarów (koszyk pomieści maksymalnie 15 przedmiotów),
+    * umieść siebie w kolejce (Queue) na losową pozycję (maksymalna ilość osób w kolejce wynosi 10),
+    * gdy dojdziesz do kasy wypisz produkty znajdujące się w koszyku.
+   
+10.
+    1. Napisz klasę Film zawierającą prywatne pole czasTrwania, tytul oraz czyObejrzany (wartość true gdy film został obejrzany). Dodaj konstruktor i odpowiednie metody obsługujące pola.
+    10.2. Stwórz dwie klasy dziedziczące z klasy Film, np. Horror i Komedia. Każda z nich ma zawierać pole finalne pole typ (wskazujące na typ filmu). Dodaj konstruktory i odpowiednie metody obsługujące pola. Dodaj metody wypisujące wszystkie dane odnośnie filmu.
+    2. W głównej klasie stwórz mapę prywatnaKolekcja, gdzie kluczem będzie numer egzemplarza, a wartością obiekt Film. Dodaj kilka elementów do utworzonej mapy.
+    3. Za pomocą iteratora wypisz posiadane filmy w kolekcji.
+       Przykład:
+       "Nr (nr w kolekcji), Tytul: (tytul filmu), Czas trwania: (czas), Obejrzany: (tak/nie), Typ: (gatunek filmu)"
