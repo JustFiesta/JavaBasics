@@ -45,7 +45,7 @@ public class Main {
 
         // mapy (hashmap) - klucze się nie duplikują <klucz, wartość>
         Map<String, String> mapExample = new HashMap<>();
-        // dodanie pary - klucz, wartość (działa to jak stos -> pop, push)
+        // dodanie pary - klucz, wartość (działa to jak stos -> "pop, push")
         mapExample.put("Jan", "janina");
         mapExample.put("1", "janina1");
         mapExample.isEmpty();
