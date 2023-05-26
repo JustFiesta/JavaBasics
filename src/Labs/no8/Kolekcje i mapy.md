@@ -7,9 +7,12 @@ Najczęściej używany rodzaj kolekcji. Charakteryzuje się tym, że jej element
 * LinkedList, 
 * Vector  (ta  klasa  jest jeszcze rozszerzana przez Stack, który nie implementuje bezpośrednio interfejsu List)
 ### Queue (kolejki)
-Najważniejszą cechą tej kolejki jest zachowanie kolejności według zasady FIFO (First In -First Out). Oznacza to, że pierwszy element wprowadzony do kolejki będzie z niej również pobierany jako pierwszy. Interfejs jest implementowany przez: PriorityQueue
+Najważniejszą cechą tej kolejki jest zachowanie kolejności według zasady FIFO (First In -First Out). Oznacza to, że pierwszy element wprowadzony do kolejki będzie z niej również pobierany jako pierwszy. Interfejs jest implementowany przez:
+* PriorityQueue
 ### Deque (Double ended queue)
-Kolejki te, zgodnie z nazwą, wspierają zarówno FIFO jak i LIFO (Last In -First Out). To drugie oznacza, że ostatni element wprowadzony do kolejki będzie z niej pobierany jako pierwszy. W tym miejscu warto sobie wyobrazić stos, na którym układamy kolejne elementy, by później  zdejmować  je  począwszy  od  tego  na  samej  górze  i  potem  dalej  w  dół.  Interfejs  jest implementowany  przez:ArrayDeque, LinkedList (ta klasa implementuje zarówno interfejs List jak i Deque)
+Kolejki te, zgodnie z nazwą, wspierają zarówno FIFO jak i LIFO (Last In -First Out). To drugie oznacza, że ostatni element wprowadzony do kolejki będzie z niej pobierany jako pierwszy. W tym miejscu warto sobie wyobrazić stos, na którym układamy kolejne elementy, by później  zdejmować  je  począwszy  od  tego  na  samej  górze  i  potem  dalej  w  dół.  Interfejs  jest implementowany  przez:
+* ArrayDeque, 
+* LinkedList (ta klasa implementuje zarówno interfejs List jak i Deque)
 ### Set (zbiory)
 Najważniejszą cechą tego rodzaju kolekcji jest unikalność jej elementów. Porównanieobiektów następuje przez wykorzystanie metody equals. W zbiorze nigdy nie będą istniały dwa obiekty (ani więcej), dla których metoda ta zwraca wartość true. Sety nie posiadają numerowanychpozycji w postaci indeksów. Zatem nie odwołamy się tutaj do konkretnej pozycji celem pobrania obiektu. Interfejs jest implementowany przez klasy: 
 * HashSet, 
@@ -19,7 +22,8 @@ Najważniejszą cechą tego rodzaju kolekcji jest unikalność jej elementów. P
 Zbiory  posortowane  mają  dokładnie  te  same  cechy  co  "zwykłe"  zbiory,  z  tym  że dodatkowo zapewniają one kolejność elementów. Sortowanie odbywa się na podstawie wykorzystania specjalnej metody, o której jeszcze nie mówiliśmy, ale która pojawi się w niedługim czasie w naszym kursie. Interfejs jest implementowany przez: 
 * TreeSet
 Listy są dostarczane w ramach kolekcji za pośrednictwem interfejsu List z pakietu java.util. Listę możemy  zasadniczo  zdefiniować  jako  bardziej  elastyczną  wersję tablicy.  Jest  to  jednak  pewne uproszczenie, dlatego też przyjrzyjmy się teraz dokładnie jakie są cechy charakterystyczne list:
-  * Elementy listy mają określoną kolejność.•Dozwolone są duplikaty elementów.
+  * Elementy listy mają określoną kolejność.
+  * Dozwolone są duplikaty elementów.
   * Elementy można umieścić na liście w określonej pozycji.
   * Element znajdujący się w określonej pozycji można prosto pobrać z listy.
   * Element w określonej pozycji możemy łatwo podmienić na inny.
