@@ -62,13 +62,12 @@ obiekty wraz z wywołaniem zaimplementowanych metod.
 *  Zaimplementuj interfejs IFigury we wszystkich klasach Prostokat, Trojkat, Kwadrat.
 * W programie głównym zadeklaruj listę obiektów typu IFigury, następnie przypisz do niej różne
   figury: Prostokat, Kwadrat, Trojkat.
-*  Dla każdego obiektu tablicy IFigur wywołaj metodę getPowierzchnia() i w_polu().
-  Kolejno:
-  1. Utwórz klasę Okrag dziedziczącą po klasie Figura
-  2. Zdefiniuj interfejs o nazwie RuchFigury, zawierający następującą metodę:
-  3. void przesun(int x, int y);
-  4. Zaimplementuj interfejs RuchFigury w klasie Okrąg.
-  5. Sprawdź działanie interfejsu.
+* Dla każdego obiektu tablicy IFigur wywołaj metodę getPowierzchnia() i w_polu(). Kolejno:
+    * Utwórz klasę Okrag dziedziczącą po klasie Figura
+    * Zdefiniuj interfejs o nazwie RuchFigury, zawierający następującą metodę:
+    * void przesun(int x, int y);
+    * Zaimplementuj interfejs RuchFigury w klasie Okrąg.
+    * Sprawdź działanie interfejsu.
 * Utwórz:
    1. Interfejs Moveable zawierający tylko dwie metody abstrakcyjne:
       * void start()
