@@ -1,30 +1,53 @@
 package Labs.no9.Zadanie3;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 public class Main {
+    //przykład zapisu do pliku binarnego
+//    DataOutputStream outputStream = null;
+//        try {
+//        outputStream = new DataOutputStream(new FileOutputStream(filePath));
+//        outputStream.writeInt(number);
+//    }finally {
+//        if (outputStream != null){
+//            outputStream.close();
+//        }
+//    }
 
     public static void main(String[] args) throws IOException {
+
         Scanner input = new Scanner(System.in);
         FileWriter output = null;
-        String path;
-        String dzien, miesiac, rok;
+        String fileName;
+        int day, month, year;
 
-        System.out.println("Podaj ścieżkę zapisu plików: ");
-        path = input.next();
+        System.out.println("Podaj nazwę pliku: ");
+        fileName = input.next();
 
         System.out.println("Podaj datę twoich urodzin (osobno dzień, miesiąc i rok)");
         System.out.println("*Dzień*");
-        dzien = input.next();
+        day = input.nextInt();
         System.out.println("*Miesiąc*");
-        miesiac = input.next();
+        month = input.nextInt();
         System.out.println("*Rok*");
-        rok = input.next();
+        year = input.nextInt();
 
-
-        
+        writeToBinaryFile(fileName, day);
+        writeToBinaryFile(fileName, month);
+        writeToBinaryFile(fileName, year);
+    }
+    public static void writeToBinaryFile(String fileName, int contents) throws IOException{
+        DataOutputStream saveToFile = null;
+        try {
+//                                                       nazwanym jako \/       \/ do kontruktora dodaje true - czyli będzie dodawać linijki a nie nadpisywać plik
+            saveToFile = new DataOutputStream(new FileOutputStream(fileName, true));
+            saveToFile.writeInt(contents);
+        }finally {
+            if (saveToFile != null){
+                saveToFile.close();
+            }
+        }
     }
 
 }

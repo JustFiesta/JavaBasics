@@ -5,7 +5,7 @@ import java.io.*;
 public class BinaryFile{
 
     //Odczytywanie binarnych plików
-    public int readBinaryFile(String filePath) throws IOException{
+    public static int readBinaryFile(String filePath) throws IOException{
         DataInputStream inputStream = null;
         try {
             inputStream = new DataInputStream(new FileInputStream(filePath));
@@ -17,6 +17,7 @@ public class BinaryFile{
         }
     }
 
+    //Zapis plików binarnych
     public void writeBinaryFile(String filePath, int number) throws IOException{
         DataOutputStream outputStream = null;
         try {
