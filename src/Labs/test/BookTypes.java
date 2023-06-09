@@ -3,8 +3,8 @@ package Labs.test;
 public enum BookTypes {
     FANTASY,
     SCI_FI,
-    ROMANCE,
-    HISTORICAL,
+    ROMANS,
+    HISTORYCZNE,
     HORROR,
-    BIOGRAPHY
+    BIOGRAFIA
 }
