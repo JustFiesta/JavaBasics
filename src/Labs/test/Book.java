@@ -1,17 +1,30 @@
 package Labs.test;
 
+import java.util.Scanner;
+
 public class Book {
 
-    //basic book information
-    String title, author, year, type;
-    int ISBN;
+    //podstawowe informacje o książce (jako że nie uwzględniam rozróżniania gatunków )
+    private String title, author;
+    private int year;
+    private String ISBN;
+    private BookTypes type;
 
-    public Book(String title, String author, String year, String type, int ISBN){
+    //konstruktor książki
+    public Book(String title, String author, int year, BookTypes type, String ISBN){
         this.title = title;
         this.author = author;
         this.year = year;
-        this.type = type;
         this.ISBN = ISBN;
+        try {
+            this.type = type;
+        }catch (Exception e){
+            System.out.println("Podaj poprawny gatunek książki (FANTASY, " + "SCI_FI, " + "ROMANS, " + "HISTORYCZNE, " + "HORROR, " + "BIOGRAFIA, " + "DRAMAT)");
+            Scanner input = new Scanner(System.in);
+            this.type = BookTypes.valueOf(input.next());
+        }
+
+
     }
 
     //getters and setters
@@ -19,19 +32,19 @@ public class Book {
         this.title = title;
     }
 
+    public void setType(BookTypes type) {
+        this.type = type;
+    }
+
     public void setAuthor(String author) {
         this.author = author;
     }
 
-    public void setYear(String year) {
+    public void setYear(int year) {
         this.year = year;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public void setISBN(int ISBN) {
+    public void setISBN(String ISBN) {
         this.ISBN = ISBN;
     }
 
@@ -43,15 +56,15 @@ public class Book {
         return author;
     }
 
-    public String getYear() {
+    public int getYear() {
         return year;
     }
 
-    public String getType() {
+    public BookTypes getType() {
         return type;
     }
 
-    public int getISBN() {
+    public String getISBN() {
         return ISBN;
     }
 }

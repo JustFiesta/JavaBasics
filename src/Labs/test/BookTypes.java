@@ -6,5 +6,6 @@ public enum BookTypes {
     ROMANS,
     HISTORYCZNE,
     HORROR,
-    BIOGRAFIA
+    BIOGRAFIA,
+    DRAMAT
 }
