@@ -1,9 +1,7 @@
 package Labs.no8.Zadanie5;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Scanner;
+import java.util.*;
+import java.util.random.RandomGenerator;
 
 public class Zadanie5 {
     public static void main(String[] args) {
@@ -29,5 +27,9 @@ public class Zadanie5 {
         }
         System.out.println("Druga lista");
         System.out.println(lista2);
+
+        // losowa liczba ale inaczej
+        Random losowanie = new Random();
+        System.out.println("Losowa liczba"+ losowanie.ints(1, 10));
     }
 }
