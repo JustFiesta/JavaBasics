@@ -126,3 +126,8 @@ obiekty wraz z wywołaniem zaimplementowanych metod.
     3. Za pomocą iteratora wypisz posiadane filmy w kolekcji.
        Przykład:
        "Nr (nr w kolekcji), Tytul: (tytul filmu), Czas trwania: (czas), Obejrzany: (tak/nie), Typ: (gatunek filmu)"
+# Lab9 (Operacje na plikach)
+1.  Napisz program, który pobierze od użytkownika ścieżkę do pliku tekstowego oraz kilka linijek tekstu (dopóki  użytkownik  nie  wprowadzi  „-”  jako  linijki)  i  zapisze je  do  pliku  tekstowego.  Do  wykonania tego  zadania  może  Ci  się  przydać  metoda  System.lineSeparator()  zwracająca  znak  nowej  linii  (jeśli chciałbyś oddzielić linie wprowadzone przez użytkownika).
+2. Napisz program, który pobierze od użytkownika ścieżkę do pliku i wyświetli zawartość pliku na ekranie wraz z informacją ile linii znajduje się w pliku. 
+3. Napisz program, który poprosi od użytkownika o nazwę pliku wyjściowego oraz o podanie swojej daty urodzenia (osobno dzień, miesiąc i rok), a następnie zapisze te dane jako trzy osobne liczby binarnie. 
+4. Napisz  program,  który  pobierze  od  użytkownika ścieżkę  do  pliku  binarnego  z  datą  urodzenia,  a następnie wyświetli ją na ekranie. 
