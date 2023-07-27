@@ -1,5 +1,5 @@
 # Java-studies
-My excercises from studies
+My excercises from studies (Uniwersity of Rzeszow)
 
 # Lab1 (metody)
 1. Napisz metodę, która zwróci twoje imię oraz aktualny wiek. 
