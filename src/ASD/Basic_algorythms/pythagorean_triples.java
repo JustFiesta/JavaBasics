@@ -1,6 +1,6 @@
 package ASD.Podstawowe_algorytmy;
 
-public class Trójki_pitagorejskie {
+public class pythagorean_triples {
     public static void main(String[] args) {
 
         //Znajdywanie trójek pitagorejskich
