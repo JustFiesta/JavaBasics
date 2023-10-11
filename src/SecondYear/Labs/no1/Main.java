@@ -1,6 +1,6 @@
-package SecondYear.Labs.no1;
+package src.SecondYear.Labs.no1;
 
-import static SecondYear.Labs.no1.Students.inputString;
+import static src.SecondYear.Labs.no1.Students.inputString;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,12 +13,6 @@ public class Main {
         studentsList.addExistingStudent(fifonz);
         studentsList.addExistingStudent(alfons);
         studentsList.addExistingStudent(franek);
-
-//        System.out.println("usuwam studenta którego nie ma na liscie");
-//        studentsList.removeStudent(126108L);
-//        System.out.println("usuwam studenta ktory jest na liscie");
-//        studentsList.removeStudent(125104L);
-//        System.out.println("");
 
         System.out.println("Sprawdzenie poprawnosci 'programu'");
         System.out.println("zad.1 Usuń studenta którego nie ma na liście (1)");

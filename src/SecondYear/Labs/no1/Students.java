@@ -1,4 +1,4 @@
-package SecondYear.Labs.no1;
+package src.SecondYear.Labs.no1;
 
 import java.util.LinkedList;
 import java.util.Scanner;
