@@ -13,9 +13,11 @@ public class Main {
         Student alfons = new Student("Alfons", "Kowalski", 125105L);
         Student franek = new Student("Franek", "Szprycha", 125106L);
 
-        studentsList.addExistingStudent(fifonz);
-        studentsList.addExistingStudent(alfons);
-        studentsList.addExistingStudent(franek);
+        if (studentsList == null){
+            studentsList.addExistingStudent(fifonz);
+            studentsList.addExistingStudent(alfons);
+            studentsList.addExistingStudent(franek);
+        }
 
         //Excercises
         System.out.println("Sprawdzenie poprawnosci 'programu'");
