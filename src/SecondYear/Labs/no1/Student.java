@@ -1,8 +1,9 @@
 package src.SecondYear.Labs.no1;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Student {
+public class Student implements Serializable {
     private String name, lastname;
     private Long albumNumber;
     private LocalDate creationDate;

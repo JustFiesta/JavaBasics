@@ -1,9 +1,10 @@
 package src.SecondYear.Labs.no1;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Students {
+public class Students implements Serializable {
     private LinkedList<Student> studentList = new LinkedList<>();
 
     public void addExistingStudent(Student student){
