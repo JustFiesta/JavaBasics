@@ -74,5 +74,9 @@ public class Students implements Serializable {
         Scanner input = new Scanner(System.in);
         return input.next();
     }
+    public static String inputWithPrompt(String prompt){
+        System.out.println("Podaj " + prompt + ":");
+        return inputString();
+    }
 }
 
