@@ -1,7 +1,7 @@
 # Warmup in first labs
 Rewind from classes and basic OOP
 ### This program is for digital class register functionality - for now it's just a prewiew version
-Methods are ready to be used and perhaps connected to database. It just needs a menu.
+Methods are ready to be used and perhaps connected to database.
 
 <hr>
 
@@ -23,7 +23,6 @@ Load students.bin on startup. If it does not exist - prompt on std:o
 
 ## New things that I've learned
 * Serialisation/Deserialization (tutorial in polish: https://www.samouczekprogramisty.pl/serializacja-w-jezyku-java/; in english: https://www.youtube.com/watch?v=DfbFTVNfkeI)
-* XML and JSON operations (in progress)
 
 #### Serialisation in 5 minutes:
 It means basically to save and object to file, so it can be transferred independently of code. So take a students list -> create .bin of it -> use it were you want (but firstly deserialize it).
