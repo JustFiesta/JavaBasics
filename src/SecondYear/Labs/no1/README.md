@@ -10,7 +10,7 @@ Make a program witch abstracts Student and Students list. Use **hermetization* a
 
 #### Style Points:
 Implement funcionality to make custom std:o prompts on user input.
-
+[README.md](README.md)
 <hr>
 
 ### More advanced stuff:

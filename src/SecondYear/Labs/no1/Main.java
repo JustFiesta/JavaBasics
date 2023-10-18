@@ -1,8 +1,8 @@
-package src.SecondYear.Labs.no1;
+package SecondYear.Labs.no1;
 
 import java.io.*;
 
-import static src.SecondYear.Labs.no1.Students.inputString;
+import static SecondYear.Labs.no1.Students.inputString;
 
 public class Main {
     public static void main(String[] args) {
