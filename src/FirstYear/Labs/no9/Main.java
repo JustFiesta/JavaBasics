@@ -16,7 +16,7 @@ public class Main {
         //Binarne
         int number = 123123123;
 
-        String pathName = "textBinary.bin";
+        String pathName = "FirstYear/Labs/textBinary.bin";
         BinaryFile binaryFile = new BinaryFile();
         binaryFile.writeBinaryFile(pathName, number);
         System.out.println(binaryFile.readBinaryFile(pathName));
