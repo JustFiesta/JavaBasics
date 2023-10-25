@@ -1,8 +1,8 @@
-package ASD.Basic_algorythms;
+package ASD.Basic_algorythms.DivideAndConquer;
 
 public class binominal {
     //divide and conquer
-    //dany jest ciąg liczbowy
+    //dany jest ciąg liczbowy - dwumian newtona
     public static void main(String[] args) {
         System.out.println("dla 5 i 3");
         System.out.println(Newton(5, 3));

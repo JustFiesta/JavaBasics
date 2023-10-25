@@ -1,4 +1,7 @@
-//package ASD.Basic_algorythms;
+package ASD.Basic_algorythms.BruteForce;
+
+public class knapSackProblem {
+    //package ASD.Basic_algorythms;
 //
 //public class knapsackProblem {
 //    public static void main(String[] args) {
@@ -41,3 +44,5 @@
 //
 //    }
 //}
+
+}

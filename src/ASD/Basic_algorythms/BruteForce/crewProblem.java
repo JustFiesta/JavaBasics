@@ -1,9 +1,8 @@
-package src.ASD.Basic_algorythms;
+package ASD.Basic_algorythms.BruteForce;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class crewProblemBF {
+public class crewProblem {
     //We need to print all posible permutations of given numbers (for ex. we have 4 nums)
 
     //Brute force attempt:

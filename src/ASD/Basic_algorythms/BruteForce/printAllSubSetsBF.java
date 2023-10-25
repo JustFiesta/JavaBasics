@@ -1,4 +1,4 @@
-package src.ASD.Basic_algorythms;
+package ASD.Basic_algorythms.BruteForce;
 
 public class printAllSubSetsBF {
     public static void main(String[] args) {

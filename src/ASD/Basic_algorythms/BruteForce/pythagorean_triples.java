@@ -1,4 +1,4 @@
-package ASD.Podstawowe_algorytmy;
+package ASD.Basic_algorythms.BruteForce;
 
 public class pythagorean_triples {
     public static void main(String[] args) {

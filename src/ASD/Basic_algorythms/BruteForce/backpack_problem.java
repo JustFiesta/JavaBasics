@@ -1,4 +1,4 @@
-package src.ASD.Basic_algorythms;
+package ASD.Basic_algorythms.BruteForce;
 
 import java.util.ArrayList;
 import java.util.HashMap;

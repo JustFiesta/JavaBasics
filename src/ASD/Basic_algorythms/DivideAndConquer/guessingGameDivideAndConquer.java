@@ -1,4 +1,4 @@
-package ASD.Basic_algorythms;
+package ASD.Basic_algorythms.DivideAndConquer;
 
 import java.util.concurrent.ThreadLocalRandom;
 
