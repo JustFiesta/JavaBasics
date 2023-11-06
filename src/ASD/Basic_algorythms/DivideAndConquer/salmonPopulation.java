@@ -1,6 +1,7 @@
 package src.ASD.Basic_algorythms.DivideAndConquer;
 
 public class salmonPopulation {
+    static int time_C =0;
     static int minutes_to_pass = 12200;
     static int minutes_passed = 0;
 
@@ -23,8 +24,11 @@ public class salmonPopulation {
         current_population -= current_population * shark_ratio;
         current_population -= current_population * salmon_runaways_ratio;
 
-        System.out.println("Ilość wywołań: " + minutes_passed);
+//        System.out.println("Ilość wywołań: " + minutes_passed);
         System.out.println("Populacja po upływie " + (minutes_passed) + " minut" + ": " + current_population);
+
+        time_C++;
+        System.out.println("Ilość wywołań: " + time_C);
 
         if (current_population <= starting_population / 2 && current_population > starting_population / 3) {
             System.out.println("Populacja łososi spadła poniżej 1/2 miliona");

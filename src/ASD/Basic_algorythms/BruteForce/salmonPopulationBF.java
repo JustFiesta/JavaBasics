@@ -3,6 +3,7 @@ package src.ASD.Basic_algorythms.BruteForce;
 public class salmonPopulationBF {
     static int time_C =0;
     static int minutes_to_pass = 12200;
+
     final static int starting_population = 1000000;
     static int current_population = 1000000;
     final static double power = 0.003;
@@ -18,14 +19,18 @@ public class salmonPopulationBF {
 
     static void calculateSalmonPopulation(int time) {
         for (int t = 0; t < time; t++) {
-            time_C++;
 
-            current_population *= Math.exp(power);
+
+
             current_population -= current_population * shark_ratio;
             current_population -= current_population * salmon_runaways_ratio;
 
-            System.out.println("Ilość wywołań: " + time_C);
+            current_population *= Math.exp(power);
+
             System.out.println("Populacja po upływie " + (t+1) + " minut" + ": " + current_population);
+
+            time_C++;
+            System.out.println("Ilość wywołań: " + time_C);
 
             if (current_population <= starting_population / 2 && current_population > starting_population / 3) {
                 System.out.println("Populacja łososi spadła poniżej 1/2 miliona");
