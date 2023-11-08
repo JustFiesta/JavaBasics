@@ -1,4 +1,4 @@
-package ASD.Basic_algorythms.greedy_alorothms;
+package ASD.Basic_algorythms.GreedyAlgorithms;
 
 import java.io.IOException;
 import java.io.*;
