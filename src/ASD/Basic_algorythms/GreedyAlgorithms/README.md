@@ -4,3 +4,4 @@ Purpose of this algorithm is to take as many (values) by extracting elementary p
 They are not the most optimal - but like brute force - just work
 
 ##### Coin problem is best example in my opinion.
+Just remember about setting good nominals (so one zloty is 100, etc)
