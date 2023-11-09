@@ -38,39 +38,40 @@ public class coinProblem {
         int zl, gr, r, i = 0;
 
         System.out.println("Podaj reszte..");
+
         System.out.print("zlotych: ");
         tekst = wejscie.readLine();
         zl = Integer.parseInt(tekst);
+
         System.out.print("groszy: ");
         tekst = wejscie.readLine();
         gr = Integer.parseInt(tekst);
 
 
         System.out.println("Reszta: ");
-
         r = zl * 100 + gr;
 
-        int[] monetki = new int[9];
+        int[] coins = new int[M.length];
 
         while (r > 0 && i < M.length) {
             if (r >= M[i] && coinLimit[i] > 0)  {
                 System.out.print(M[i] / 100.0 + " ");
                 r = r - M[i];
-                monetki[i]++;
+                coins[i]++;
             } else
                 i++;
         }
         System.out.println();
         System.out.println("==============");
-        System.out.println("ilosc 5     " + monetki[0]);
-        System.out.println("ilosc 2     " + monetki[1]);
-        System.out.println("ilosc 1     " + monetki[2]);
-        System.out.println("ilosc 0.5   " + monetki[3]);
-        System.out.println("ilosc 0.2   " + monetki[4]);
-        System.out.println("ilosc 0.1   " + monetki[5]);
-        System.out.println("ilosc 0.05  " + monetki[6]);
-        System.out.println("ilosc 0.02  " + monetki[7]);
-        System.out.println("ilosc 0.01  " + monetki[8]);
+        System.out.println("ilosc 5     " + coins[0]);
+        System.out.println("ilosc 2     " + coins[1]);
+        System.out.println("ilosc 1     " + coins[2]);
+        System.out.println("ilosc 0.5   " + coins[3]);
+        System.out.println("ilosc 0.2   " + coins[4]);
+        System.out.println("ilosc 0.1   " + coins[5]);
+        System.out.println("ilosc 0.05  " + coins[6]);
+        System.out.println("ilosc 0.02  " + coins[7]);
+        System.out.println("ilosc 0.01  " + coins[8]);
         if (r > 0){
             System.out.println("Pozostała reszta: " + r/100);
         }
