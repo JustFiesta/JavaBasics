@@ -1,9 +1,8 @@
 package src.ASD.Basic_algorythms.rewindForTest;
 
 import java.util.Scanner;
-import java.util.concurrent.ThreadLocalRandom;
 
-public class guessingGame {
+public class guessingGameDivConq {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Wymyśl liczbę do odgadnięcia");

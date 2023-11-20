@@ -3,7 +3,7 @@ package src.ASD.Basic_algorythms.rewindForTest;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class crewProblem {
+public class crewProblemMonteCarlo {
     static String[] cosmonautList = {"AD", "BD", "BC", "AB", "CD"};
     static String combination = "";
     public static void main(String[] args) {
