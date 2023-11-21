@@ -12,6 +12,8 @@ public class quickestRoad {
             {  0,  0,  0,  0,430,365,  0,  0,768},
             {  0,  0,  0,  0,  0,774,403,768,  0}
     };
+    static String[] cities = {"Warszawa", "Katowice", "Zakopane", "Lwów", "Wiedeń", "Budapeszt", "Bukareszt", "Zagrzeb"};
+
     public static void main(String[] args) {
         calculateWay(0, 8);
     }
@@ -19,30 +21,28 @@ public class quickestRoad {
         int jurneyKm = 0;
 
         int minKm;
+        String cityOrder = "";
 
         int shortestPathIndex = 0;
         int currentCityIndex = start;
         while (currentCityIndex != end){
-
+            cityOrder += cities[currentCityIndex] + ", ";
             minKm = Integer.MAX_VALUE;
 
             if (ways[currentCityIndex][end] > 0){ // jeżeli jest trasa bezpośrednia to jedźmy nią
                 jurneyKm += ways[currentCityIndex][end];
-                System.out.println("Trasa bezpośrednia zajmie: " + jurneyKm);
                 break;
             }else { // jeżeli nie ma trasy to szukaj najkrótszej w każdym mieście dopóki nie znajdziesz trasy do punktu docelowego
-                System.out.println("Miasto nr: " + currentCityIndex);
                 for (int j = 0; j < ways.length; j++){
-                    System.out.println("trasa do miejsca o nr: " + j);
                     if (minKm > ways[currentCityIndex][j] && ways[currentCityIndex][j] > 0 && j > currentCityIndex){
                         minKm = ways[currentCityIndex][j];
                         shortestPathIndex= j;
-                        System.out.println("Obecne minimalne KM: " + minKm);
                     }
                 }
                 jurneyKm += minKm;
                 currentCityIndex = shortestPathIndex;
             }
         }
+        System.out.println("Trasa wyniesie: " + jurneyKm + "km. Przystanki: " + cityOrder);
     }
 }
