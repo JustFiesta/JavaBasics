@@ -1,6 +1,6 @@
-package src.ASD.DataStructures.BasicStructures.OrderedDynamicArray;
+package src.ASD.DataStructures;
 
-class Person2 implements Comparable<Person2>{
+public class Person2 implements Comparable<Person2>{
     private String imie, nazwisko;
     private int wiek;
 
