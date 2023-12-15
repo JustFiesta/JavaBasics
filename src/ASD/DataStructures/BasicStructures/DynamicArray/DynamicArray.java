@@ -49,9 +49,6 @@ public class DynamicArray {
         System.out.println();
 
     }
-//    public void print2(){
-//        System.out.println(Arrays.toString(table));
-//    } // it returns whole table to its a bit wrong
     public static void main(String[] args) {
         DynamicArray testArray = new DynamicArray(5);
 
