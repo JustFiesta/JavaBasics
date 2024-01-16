@@ -1,5 +1,8 @@
 package FirstYear.Labs.no8.Zadanie3;
 
+import FirstYear.Labs.no8.Zadanie3.Participants;
+import src.FirstYear.Labs.no8.Zadanie3.EventParticipants;
+
 public class Main {
     public static void main(String[] args) {
         //Tworzy event do którego można dodawać uczestników
