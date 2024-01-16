@@ -1,13 +1,15 @@
-package SecondYear.Labs.no1;
+package src.SecondYear.Labs.no1;
+
+import src.SecondYear.Labs.no1.Students1;
 
 import java.io.*;
 
-import static SecondYear.Labs.no1.Students.inputString;
+import static src.SecondYear.Labs.no1.Students1.inputString;
 
 public class Main {
     public static void main(String[] args) {
 
-        Students studentsList = deserializeStudentsList();
+        Students1 studentsList = deserializeStudentsList();
 
         //checking funcionality
 //        Student fifonz = new Student("Fifonż", "Nowakowski", 125104L);
@@ -47,27 +49,27 @@ public class Main {
 
             switch (inputString()) {
                 case "1":
-                    studentsList.addNewStudent();
+                    studentsList.addNewStudent1();
                     break;
                 case "2":
                     System.out.println("Podaj numer albumu studenta do usunięcia:");
                     Long albumNumberToRemove = Long.parseLong(inputString());
-                    studentsList.removeStudent(albumNumberToRemove);
+                    studentsList.removeStudent1(albumNumberToRemove);
                     break;
                 case "3":
                     System.out.println("Podaj numer albumu studenta do wyświetlenia:");
                     Long albumNumberToDisplay = Long.parseLong(inputString());
-                    studentsList.showStudent(albumNumberToDisplay);
+                    studentsList.showStudent1(albumNumberToDisplay);
                     break;
                 case "4":
                     System.out.println("Podaj numer albumu, powyżej którego szukamy studentów:");
                     albumNumberToDisplay = Long.parseLong(inputString());
-                    studentsList.showStudentsAboveCertainAlbum(albumNumberToDisplay);
+                    studentsList.showStudent1sAboveCertainAlbum(albumNumberToDisplay);
                     break;
                 case "5":
                     System.out.println("Podaj numer albumu studenta do modyfikacji:");
                     Long albumNumberToModify = Long.parseLong(inputString());
-                    studentsList.changeStudentNames(albumNumberToModify);
+                    studentsList.changeStudent1Names(albumNumberToModify);
                     break;
                 case "q":
                     serializeStudentsList(studentsList);
@@ -79,7 +81,7 @@ public class Main {
         }
     }
     //method for object serialization
-    private static void serializeStudentsList(Students studentsList){
+    private static void serializeStudentsList(Students1 studentsList){
         try {
             FileOutputStream outputFile = new FileOutputStream(".\\students.bin");
             ObjectOutputStream outputStream = new ObjectOutputStream(outputFile);
@@ -96,17 +98,17 @@ public class Main {
         }
     }
     //same but for deserialization
-    private static Students deserializeStudentsList(){
+    private static Students1 deserializeStudentsList(){
 
         File studentList = new File(".\\students.bin");
         if (studentList.exists()){
-            Students studentsList = null;
+            Students1 studentsList = null;
             try {
                 FileInputStream inputFile = new FileInputStream(".\\students.bin");
                 ObjectInputStream inputStream = new ObjectInputStream(inputFile);
 
                 //load students list from .bin file into variable
-                studentsList = (Students) inputStream.readObject();
+                studentsList = (Students1) inputStream.readObject();
 
                 inputStream.close();
                 inputFile.close();
@@ -116,7 +118,7 @@ public class Main {
             return studentsList;
         }else {
             System.out.println("Nie znaleziono pliku students.bin");
-            return new Students();
+            return new Students1();
         }
     }
 }

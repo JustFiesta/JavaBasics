@@ -1,14 +1,16 @@
-package SecondYear.Labs.no1;
+package src.SecondYear.Labs.no1;
+
+import SecondYear.Labs.no1.Student1;
 
 import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.Scanner;
+ 
+public class Students1 implements Serializable {
+    private LinkedList<Student1> studentList = new LinkedList<>();
 
-public class Students implements Serializable {
-    private LinkedList<Student> studentList = new LinkedList<>();
-
-    public void addExistingStudent(Student student){
-        for (Student studentFromList:studentList) {
+    public void addExistingStudent1(Student1 student){
+        for (Student1 studentFromList:studentList) {
             if (studentFromList.getAlbumNumber().equals(student.getAlbumNumber())){
                 throw new RuntimeException("Taki student już istnieje");
             }
@@ -16,11 +18,11 @@ public class Students implements Serializable {
         this.studentList.add(student);
         System.out.println("Dodano studenta!");
     }
-    public void addNewStudent() {
-        Student student = new Student(
+    public void addNewStudent1() {
+        Student1 student = new Student1(
             inputString(), inputString(), (long) Integer.parseInt(inputString())
         );
-        for (Student studentFromList:studentList) {
+        for (Student1 studentFromList:studentList) {
             if (studentFromList.getAlbumNumber().equals(student.getAlbumNumber())){
                 throw new RuntimeException("Taki student już istnieje");
             }
@@ -28,29 +30,29 @@ public class Students implements Serializable {
         this.studentList.add(student);
         System.out.println("Dodano studenta!");
     }
-    public void removeStudent(Long albumNumber) {
-        for (Student student:studentList) {
+    public void removeStudent1(Long albumNumber) {
+        for (Student1 student:studentList) {
             student.toString();
             if (albumNumber.equals(student.getAlbumNumber())) {
                 studentList.remove(student);
                 System.out.println("Usunięto studenta!");
                 break;
             }else {
-                throw new RuntimeException("Student o takim numerze albumu nie istnieje!");
+                throw new RuntimeException("Student1 o takim numerze albumu nie istnieje!");
             }
         }
     }
-    public void showStudent(Long albumNumber){
-        for (Student student:studentList) {
+    public void showStudent1(Long albumNumber){
+        for (Student1 student:studentList) {
             if (albumNumber.equals(student.getAlbumNumber())){
                 System.out.println(student.toString());
                 break;
             }
         }
     }
-    public LinkedList showStudentsAboveCertainAlbum(Long albumNumber){
-        LinkedList<Student> studentListAboveAlbumNumber = new LinkedList<>();
-        for (Student student:studentList) {
+    public LinkedList showStudent1sAboveCertainAlbum(Long albumNumber){
+        LinkedList<Student1> studentListAboveAlbumNumber = new LinkedList<>();
+        for (Student1 student:studentList) {
             if (albumNumber >= student.getAlbumNumber()){
                 studentListAboveAlbumNumber.add(student);
             }
@@ -59,8 +61,8 @@ public class Students implements Serializable {
         return studentListAboveAlbumNumber;
 
     }
-    public void changeStudentNames(Long albumNumber){
-        for (Student student:studentList) {
+    public void changeStudent1Names(Long albumNumber){
+        for (Student1 student:studentList) {
             if (albumNumber == student.getAlbumNumber()){
                 System.out.println("Podaj nowe imie studenta");
                 student.setName(inputString());

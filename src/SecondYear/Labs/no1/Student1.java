@@ -3,12 +3,12 @@ package SecondYear.Labs.no1;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Student implements Serializable {
+public class Student1 implements Serializable {
     private String name, lastname;
     private Long albumNumber;
     private LocalDate creationDate;
 
-    public Student(String name, String lastname, Long albumNumber) {
+    public Student1(String name, String lastname, Long albumNumber) {
         this.name = name;
         this.lastname = lastname;
         this.albumNumber = albumNumber;

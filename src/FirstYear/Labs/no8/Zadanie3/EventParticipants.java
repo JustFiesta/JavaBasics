@@ -1,5 +1,6 @@
-package FirstYear.Labs.no8.Zadanie3;
+package src.FirstYear.Labs.no8.Zadanie3;
 
+import FirstYear.Labs.no8.Zadanie3.Participants;
 import java.util.LinkedList;
 import java.util.Scanner;
 
