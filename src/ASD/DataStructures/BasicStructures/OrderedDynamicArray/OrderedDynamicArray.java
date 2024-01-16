@@ -1,7 +1,5 @@
 package src.ASD.DataStructures.BasicStructures.OrderedDynamicArray;
 
-import src.ASD.DataStructures.Person2;
-
 public class OrderedDynamicArray {
     private Person2[] table;
     private int numberOfElements; // current count of elements in table
